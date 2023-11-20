@@ -1,8 +1,6 @@
 import React from "react";
 import "../Blog/Blog.css";
 import Blog1 from '../../images/blog-01.jpg';
-import Blog2 from '../../images/blog-02.jpg';
-import Blog3 from '../../images/blog-03.jpg';
 import { useEffect, useState } from "react";
 import axios from "axios";
 
