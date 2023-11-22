@@ -31,8 +31,8 @@ function Project() {
                          <div className="mask__effect"></div>
                      </div>
                      <div className="project__meta absolute">
-                     <h5 className="project__text">Development</h5>
-                     <h4 className="project__text">Getting tickets to the big show</h4>
+                     <h5 className="project__text">Software Solution Application</h5>
+                     <h4 className="project__text">https://digitalproductivity.sa/</h4>
                      <a href="#" className="project__btn">View Details</a>
                      </div>
                  </div>
@@ -48,8 +48,8 @@ function Project() {
                          <div className="mask__effect"></div>
                      </div>
                      <div className="project__meta absolute">
-                     <h5 className="project__text">Development</h5>
-                     <h4 className="project__text">Getting tickets to the big show</h4>
+                     <h5 className="project__text">MERN Application</h5>
+                     <h4 className="project__text">https://cryptoinvestospage.vercel.app/</h4>
                      <a href="#" className="project__btn">View Details</a>
                      </div>
                  </div>
@@ -65,8 +65,8 @@ function Project() {
                          <div className="mask__effect"></div>
                      </div>
                      <div className="project__meta absolute">
-                     <h5 className="project__text">Development</h5>
-                     <h4 className="project__text">Getting tickets to the big show</h4>
+                     <h5 className="project__text">Webflow and Javascript</h5>
+                     <h4 className="project__text">https://www.freelo.media/</h4>
                      <a href="#" className="project__btn">View Details</a>
                      </div>
                  </div>
@@ -82,8 +82,8 @@ function Project() {
                          <div className="mask__effect"></div>
                      </div>
                      <div className="project__meta absolute">
-                     <h5 className="project__text">Development</h5>
-                     <h4 className="project__text">Getting tickets to the big show</h4>
+                     <h5 className="project__text">BULLISH GREEN ACADEMY</h5>
+                     <h4 className="project__text">https://bugacademy.vercel.app/</h4>
                      <a href="#" className="project__btn">View Details</a>
                      </div>
                  </div>
@@ -99,8 +99,8 @@ function Project() {
                          <div className="mask__effect"></div>
                      </div>
                      <div className="project__meta absolute">
-                     <h5 className="project__text">Development</h5>
-                     <h4 className="project__text">Getting tickets to the big show</h4>
+                     <h5 className="project__text">Digital Agency</h5>
+                     <h4 className="project__text">https://backlinkedge.vercel.app/</h4>
                      <a href="#" className="project__btn">View Details</a>
                      </div>
                  </div>
@@ -116,8 +116,8 @@ function Project() {
                          <div className="mask__effect"></div>
                      </div>
                      <div className="project__meta absolute">
-                     <h5 className="project__text">Development</h5>
-                     <h4 className="project__text">Getting tickets to the big show</h4>
+                     <h5 className="project__text">MERN Application Skelenton</h5>
+                     <h4 className="project__text">https://github.com/seonudoiba/mern-starter-backend/blob/main/routes/User.js</h4>
                      <a href="#" className="project__btn">View Details</a>
                      </div>
                  </div>
