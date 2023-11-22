@@ -116,7 +116,7 @@ function Project() {
                          <div className="mask__effect"></div>
                      </div>
                      <div className="project__meta absolute">
-                     <h5 className="project__text">MERN Application Skelenton</h5>
+                     <h5 className="project__text">MERN Application Skeleton</h5>
                      <h4 className="project__text">https://github.com/seonudoiba/mern-starter-backend/blob/main/routes/User.js</h4>
                      <a href="#" className="project__btn">View Details</a>
                      </div>
