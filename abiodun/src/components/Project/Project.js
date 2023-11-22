@@ -13,10 +13,10 @@ function Project() {
       <div className="heading">
         <h1 className="heading">My Latest Projects</h1>
         <p className="heading p__color">
-          There are many variations of passages of Lorem Ipsum available,
+          Here are some of the exiting projects I have worked on recently. 
         </p>
         <p className="heading p__color">
-          but the majority have suffered alteration.
+        Want to see more? Email me.
         </p>
       </div>
        <div className="container">
