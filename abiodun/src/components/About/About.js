@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-import aboutImg from "../../images/about.jpg";
+import aboutImg from "../../assets/about.jpg";
 import PDFButton from "../PDFButton";
 
 function About() {

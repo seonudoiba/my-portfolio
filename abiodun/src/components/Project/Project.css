@@ -23,7 +23,7 @@ img.project__img::after{
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #f9004d;
+    background-color: chocolate;
     border-radius: 10px;
     transition: .4s;
     opacity: .3;
@@ -66,16 +66,16 @@ a.project__btn {
     transition: .4s ease;
 }
 a.project__btn:hover{
-    background-color: #f9004d;
-    border: 2px solid #f9004d;
+    background-color: chocolate;
+    border: 2px solid chocolate;
 }
 button.btn {
     padding: 15px 20px;
     font-size: 18px;
     font-weight: 500;
     border-radius: 5px;
-    border: 2px solid #f9004d;
-    background-color: #f9004d;
+    border: 2px solid chocolate;
+    background-color: chocolate;
     color: #fff!important;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -83,8 +83,8 @@ button.btn {
 }
 button.view__more:hover{
     background-color: #fff;
-    border: 2px solid #f9004d;
-    color: #f9004d!important;
+    border: 2px solid chocolate;
+    color: chocolate!important;
 }
 /* RESPONSIVE */
 @media only screen and (max-width: 1024px){

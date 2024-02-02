@@ -1,28 +1,44 @@
-import HomePage from './pages/homePage';
-import Footer from './components/Footer/Footer';
-import './App.css';
-import Header from './components/Header/Header';
+import {Routes, Route } from "react-router-dom";
+import "./App.css";
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import BlogHome from './components/LoadBlog/BlogList';
-import BlogEditor from './pages/Blogeditor'
-import BlogPost from './components/LoadBlog/BlogPost';
+import HomePage from './pages/homePage';
+import Footer from './components/Footer';
+import Articles from './pages/article/Article.jsx'
+import Header from './components/Header'
+import Login from "./pages/login/LoginPage";
+import { Toaster } from "react-hot-toast";
+import ArticleDetailPage from "./pages/articleDetail/ArticleDetailPage";
+import RegisterPage from "./pages/register/RegisterPage";
+import ProfilePage from "./pages/profile/ProfilePage";
+import AdminLayout from "./pages/admin/AdminLayout";
+import Admin from "./pages/admin/screens/Admin";
+import Comments from "./pages/admin/screens/comments/Comments";
+import ManagePosts from "./pages/admin/screens/posts/ManagePosts";
+import EditPost from "./pages/admin/screens/posts/EditPost";
+
 
 
 function App() {
   return (
     <div className="App">
-
-      <BrowserRouter>
-        <Header />
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/blog" element={<BlogHome />} />
-          <Route path="/blog/:postId" element={<BlogPost/>} />
-          <Route path="/editor05012000" element={<BlogEditor/>} />
-        </Routes>
-        <Footer />
-      </BrowserRouter>
+      <Header />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/articles" element={<Articles />} />
+        <Route path="/login" element={<Login />} />
+        {/* <Route index path="/" element={<HomePage />} /> */}
+        <Route path="/blog/:slug" element={<ArticleDetailPage />} />
+        <Route path="/register" element={<RegisterPage />} />
+        <Route path="/profile" element={<ProfilePage />} />
+        <Route path="/admin" element={<AdminLayout />}>
+          <Route index element={<Admin />} />
+          <Route path="comments" element={<Comments />} />
+          <Route path="posts/manage" element={<ManagePosts />} />
+          <Route path="posts/manage/edit/:slug" element={<EditPost />} />
+        </Route>
+      </Routes>
+      <Toaster />
+      <Footer />
     </div>
   );
 }

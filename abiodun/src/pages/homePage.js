@@ -3,8 +3,9 @@ import Home from '../components/Home/Home.js';
 import About from '../components/About/About.js';
 import Service from '../components/Service/Service.js';
 import Project from '../components/Project/Project.js';
-import Blog from '../components/Blog/Blog.js';
 import Contact from '../components/Contact/Contact.js';
+import Articles from './home/container/Articles.jsx'
+import CTA from './home/container/CTA.jsx'
 
 function HomePage() {
     return (
@@ -13,7 +14,8 @@ function HomePage() {
             <About />
             <Service />
             <Project />
-            <Blog />
+            <Articles/>
+            <CTA/>
             <Contact />            
         </div>
     );

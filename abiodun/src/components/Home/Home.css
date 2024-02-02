@@ -1,66 +1,65 @@
-.home__bg{
-    background-image: url(../../images/background.jpg);
-    background-color: #010101;
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
+.home__bg {
+  background-image: url(../../assets/background.jpg);
+  background-color: #010101;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.home__content{
-    padding: 125px 0px;
+.home__content {
+  padding: 125px 0px;
 }
-h1.home__text{
-    font-size: 1.5rem;
-    font-weight: 600;
-    letter-spacing: 3px;
-    color: rgb(195, 191, 191)!important;
+h1.home__text {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: rgb(195, 191, 191) !important;
 }
-h2.home__text{
-    font-size: 2.5rem;
-    line-height: 2.5rem;
-    font-weight: 800;
-    font-family: Montserrat,sans-serif;
+h2.home__text {
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  font-weight: 800;
+  font-family: Montserrat, sans-serif;
 }
-h3.home__text{
-    font-size: 50px;
-    font-weight: 800;
-    font-family: Montserrat,sans-serif;
-    line-height: 40px;
+h3.home__text {
+  font-size: 50px;
+  font-weight: 800;
+  font-family: Montserrat, sans-serif;
+  line-height: 40px;
 }
-h4.home__text{
-    font-size: 50px;
-    font-weight: 800;
-    line-height: 40px;
-    font-family: Montserrat,sans-serif;
-    
+h4.home__text {
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 40px;
+  font-family: Montserrat, sans-serif;
 }
 
 /* RESPONSIVE */
-@media only screen and (max-width: 768px){
- .header{
-     justify-content: space-between;
- }
- .navigation.pxy__30 {
-        display: none;
-    }
-h2.white.pz__10 {
-    font-size: 50px!important;
-}
-svg.bi.bi-justify.white.pointer {
+@media only screen and (max-width: 768px) {
+  .header {
+    justify-content: space-between;
+  }
+  .navigation.pxy__30 {
+    display: none;
+  }
+  h2.white.pz__10 {
+    font-size: 50px !important;
+  }
+  svg.bi.bi-justify.white.pointer {
     width: 30px;
     height: 30px;
+  }
 }
-}
-@media only screen and (max-width: 425px){
-    h2.home__text.pz__10{
+@media only screen and (max-width: 425px) {
+  h2.home__text.pz__10 {
     font-size: 32px;
-}
-h3.sweet.pz__10 {
+  }
+  h3.sweet.pz__10 {
     font-size: 40px;
-}
-h1.home__text {
+  }
+  h1.home__text {
     font-size: 14px;
-}
-h4.home__text {
+  }
+  h4.home__text {
     font-size: 45px;
-}
+  }
 }

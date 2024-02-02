@@ -20,7 +20,7 @@ p.heading.p__color {
 .service__box:hover {
     transform: translateY(5px);
     background-image: linear-gradient( 
-90deg,#f61b10,#ef0963);
+90deg,chocolate, rgb(112, 98, 19));
 }
 .service__box:hover .icon{
     color: #fff;
@@ -34,7 +34,7 @@ p.heading.p__color {
     font-weight: 400;
     margin-bottom: 23px;
     display: inline-flex;
-    color: #f9004d;
+    color: chocolate;
 }
 p.service__text.p__color {
     margin-bottom: 0;
