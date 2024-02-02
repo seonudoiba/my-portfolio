@@ -20,7 +20,8 @@ const app = express();
 app.use(express.json());
 // Allow only specific origins
 const corsOptions = {
-  origin: 'http://localhost:3000',
+  //origin: 'http://localhost:3000',
+  origin: "https://myportfolio-abiodun.vercel.app/",
   optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
 };
 
