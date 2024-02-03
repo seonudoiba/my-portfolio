@@ -6,7 +6,7 @@ import { stables } from "../constants";
 import CropEasy from "./crop/CropEasy";
 import { toast } from "react-hot-toast";
 import { useDispatch, useSelector } from "react-redux";
-import { updateProfilePicture } from "../services/index/users";
+import { updateProfilePicture } from "../apiRequests/users";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { userActions } from "../store/reducers/userReducers";
 

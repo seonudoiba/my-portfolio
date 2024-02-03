@@ -1,7 +1,7 @@
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import React, { useState } from "react";
 import CreatableSelect from "react-select/creatable";
-import { getSinglePost, updatePost } from "../../../../services/index/posts";
+import { getSinglePost, updatePost } from "../../../../apiRequests/posts";
 import { Link, useParams, useNavigate } from "react-router-dom";
 import ArticleDetailSkeleton from "../../../articleDetail/components/ArticleDetailSkeleton";
 import ErrorMessage from "../../../../components/ErrorMessage";
@@ -11,7 +11,7 @@ import { toast } from "react-hot-toast";
 import { useSelector } from "react-redux";
 import Editor from "../../../../components/editor/Editor";
 import MultiSelectTagDropdown from "../../components/select-dropdown/MultiSelectTagDropdown";
-import { getAllCategories } from "../../../../services/index/postCategories";
+import { getAllCategories } from "../../../../apiRequests/postCategories";
 import {
   categoryToOption,
   filterCategories,

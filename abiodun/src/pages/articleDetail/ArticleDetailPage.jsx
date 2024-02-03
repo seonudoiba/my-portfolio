@@ -7,7 +7,7 @@ import SocialShareButtons from "../../components/SocialShareButtons";
 import { images, stables } from "../../constants";
 import SuggestedPosts from "./container/SuggestedPosts";
 import { useQuery } from "@tanstack/react-query";
-import { getAllPosts, getSinglePost } from "../../services/index/posts";
+import { getAllPosts, getSinglePost } from "../../apiRequests/posts";
 import ArticleDetailSkeleton from "./components/ArticleDetailSkeleton";
 import ErrorMessage from "../../components/ErrorMessage";
 import { useSelector } from "react-redux";

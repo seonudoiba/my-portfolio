@@ -8,7 +8,7 @@ import {
   createNewComment,
   deleteComment,
   updateComment,
-} from "../../services/index/comments";
+} from "../../apiRequests/comments";
 import { toast } from "react-hot-toast";
 
 const CommentsContainer = ({

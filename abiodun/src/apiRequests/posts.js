@@ -1,14 +1,23 @@
 import axios from "axios";
-import apiUrl from "../apiUrl";
+import apiUrl from "./apiUrl";
 
-
-export const signup = async ({ name, email, password }) => {
+export const getAllPosts = async (searchKeyword = "", page = 1, limit = 10) => {
   try {
-    const { data } = await axios.post(apiUrl + "/api/users/register", {
-      name,
-      email,
-      password,
-    });
+    console.log("called");
+    const { data, headers } = await axios.get(
+      `${apiUrl}/api/posts?searchKeyword=${searchKeyword}&page=${page}&limit=${limit}`
+    );
+    return { data, headers };
+  } catch (error) {
+    if (error.response && error.response.data.message)
+      throw new Error(error.response.data.message);
+    throw new Error(error.message);
+  }
+};
+
+export const getSinglePost = async ({ slug }) => {
+  try {
+    const { data } = await axios.get(`${apiUrl}/api/posts/${slug}`);
     return data;
   } catch (error) {
     if (error.response && error.response.data.message)
@@ -17,21 +26,7 @@ export const signup = async ({ name, email, password }) => {
   }
 };
 
-export const login = async ({ email, password }) => {
-  try {
-    const { data } = await axios.post(apiUrl + "/api/users/login", {
-      email,
-      password,
-    });
-    return data;
-  } catch (error) {
-    if (error.response && error.response.data.message)
-      throw new Error(error.response.data.message);
-    throw new Error(error.message);
-  }
-};
-
-export const getUserProfile = async ({ token }) => {
+export const deletePost = async ({ slug, token }) => {
   try {
     const config = {
       headers: {
@@ -39,7 +34,7 @@ export const getUserProfile = async ({ token }) => {
       },
     };
 
-    const { data } = await axios.get(apiUrl + "/api/users/profile", config);
+    const { data } = await axios.delete(`${apiUrl}/api/posts/${slug}`, config);
     return data;
   } catch (error) {
     if (error.response && error.response.data.message)
@@ -48,7 +43,7 @@ export const getUserProfile = async ({ token }) => {
   }
 };
 
-export const updateProfile = async ({ token, userData }) => {
+export const updatePost = async ({ updatedData, slug, token }) => {
   try {
     const config = {
       headers: {
@@ -57,8 +52,8 @@ export const updateProfile = async ({ token, userData }) => {
     };
 
     const { data } = await axios.put(
-      apiUrl + "/api/users/updateProfile",
-      userData,
+      `${apiUrl}/api/posts/${slug}`,
+      updatedData,
       config
     );
     return data;
@@ -69,20 +64,15 @@ export const updateProfile = async ({ token, userData }) => {
   }
 };
 
-export const updateProfilePicture = async ({ token, formData }) => {
+export const createPost = async ({ token }) => {
   try {
     const config = {
       headers: {
-        "Content-Type": "multipart/form-data",
         Authorization: `Bearer ${token}`,
       },
     };
 
-    const { data } = await axios.put(
-      apiUrl + "/api/users/updateProfilePicture",
-      formData,
-      config
-    );
+    const { data } = await axios.post(`${apiUrl}/api/posts`, {}, config);
     return data;
   } catch (error) {
     if (error.response && error.response.data.message)

@@ -1,12 +1,12 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
 
-import ArticleCard from "../../../components/ArticleCard";
+import ArticleCard from "./ArticleCard";
 import { useQuery } from "@tanstack/react-query";
-import { getAllPosts } from "../../../services/index/posts";
+import { getAllPosts } from "../../apiRequests/posts";
 import { toast } from "react-hot-toast";
-import ArticleCardSkeleton from "../../../components/ArticleCardSkeleton";
-import ErrorMessage from "../../../components/ErrorMessage";
+import ArticleCardSkeleton from "./ArticleCardSkeleton";
+import ErrorMessage from "../ErrorMessage";
 
 const Articles = () => {
   const { data, isLoading, isError } = useQuery({
@@ -20,7 +20,9 @@ const Articles = () => {
 
   return (
     <section className="flex bg-black flex-col container mx-auto px-5 py-10">
-    <h2 className="text-4xl text-center font-bold text-yellow-700 mb-5">Articles</h2>
+      <h2 className="text-4xl text-center font-bold text-yellow-700 mb-5">
+        Articles
+      </h2>
       <div className=" flex flex-wrap md:gap-x-5 gap-y-5 pb-10">
         {isLoading ? (
           [...Array(3)].map((item, index) => (

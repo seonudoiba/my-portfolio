@@ -6,7 +6,7 @@ import {
   deleteComment,
   getAllComments,
   updateComment,
-} from "../../../../services/index/comments";
+} from "../../../../apiRequests/comments";
 import DataTable from "../../components/DataTable";
 import { images, stables } from "../../../../constants";
 import { Link } from "react-router-dom";

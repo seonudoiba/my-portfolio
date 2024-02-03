@@ -10,11 +10,11 @@ function Contact() {
             <div className="contact__meta">
               <h1 className="hire__text">Hire Me.</h1>
               <p className="hire__text white">
-                I am available for freelance work. Connect with me via phone:
+                I'm available to discuss any offer you have for me. Connect with me via phone:
               </p>
               <p className="hire__text white">
-                <strong>+8436 14 245</strong> or email{" "}
-                <strong>admin@example.com</strong>
+                <strong>+234 811 680 9425</strong> or email{" "}
+                <strong>abiodunigbehinadun17@example.com</strong>
               </p>
             </div>
             <div className="input__box">

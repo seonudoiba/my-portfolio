@@ -1,7 +1,6 @@
 import React from "react";
 
-import Articles from "../home/container/Articles";
-
+import Articles from "../../components/articles/Articles";
 
 const Article = () => {
   return (

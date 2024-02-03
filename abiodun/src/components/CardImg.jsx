@@ -1,5 +1,5 @@
 import React from 'react'
-import "../../../components/Project/Project.css";
+import "./Project/Project.css";
 import { Link } from 'react-router-dom';
 
 const CardImg = ({toImg, toLink, toText}) => {

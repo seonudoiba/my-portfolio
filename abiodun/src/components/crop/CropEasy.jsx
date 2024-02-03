@@ -3,7 +3,7 @@ import Cropper from "react-easy-crop";
 
 import getCroppedImg from "./cropImage";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
-import { updateProfilePicture } from "../../services/index/users";
+import { updateProfilePicture } from "../../apiRequests/users";
 import { useDispatch, useSelector } from "react-redux";
 import { userActions } from "../../store/reducers/userReducers";
 import { toast } from "react-hot-toast";

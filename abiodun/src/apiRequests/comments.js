@@ -1,75 +1,100 @@
 import axios from "axios";
-import apiUrl from "../apiUrl";
+import apiUrl from "./apiUrl";
 
-export const getAllPosts = async (searchKeyword = "", page = 1, limit = 10) => {
+export const createNewComment = async ({
+  token,
+  desc,
+  slug,
+  parent,
+  replyOnUser,
+}) => {
   try {
-    console.log("called")
+    const config = {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    };
+
+    const { data } = await axios.post(
+      apiUrl + "/api/comments",
+      {
+        desc,
+        slug,
+        parent,
+        replyOnUser,
+      },
+      config
+    );
+    return data;
+  } catch (error) {
+    if (error.response && error.response.data.message)
+      throw new Error(error.response.data.message);
+    throw new Error(error.message);
+  }
+};
+
+export const updateComment = async ({ token, desc, check, commentId }) => {
+  try {
+    const config = {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    };
+
+    const { data } = await axios.put(
+      `${apiUrl}/api/comments/${commentId}`,
+      {
+        desc,
+        check,
+      },
+      config
+    );
+    return data;
+  } catch (error) {
+    if (error.response && error.response.data.message)
+      throw new Error(error.response.data.message);
+    throw new Error(error.message);
+  }
+};
+
+export const deleteComment = async ({ token, commentId }) => {
+  try {
+    const config = {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    };
+
+    const { data } = await axios.delete(
+      `${apiUrl}/api/comments/${commentId}`,
+      config
+    );
+    return data;
+  } catch (error) {
+    if (error.response && error.response.data.message)
+      throw new Error(error.response.data.message);
+    throw new Error(error.message);
+  }
+};
+
+export const getAllComments = async (
+  token,
+  searchKeyword = "",
+  page = 1,
+  limit = 10
+) => {
+  try {
+    const config = {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    };
+
     const { data, headers } = await axios.get(
-      `${apiUrl}/api/posts?searchKeyword=${searchKeyword}&page=${page}&limit=${limit}`
+      `${apiUrl}/api/comments?searchKeyword=${searchKeyword}&page=${page}&limit=${limit}`,
+      config
     );
     return { data, headers };
-  } catch (error) {
-    if (error.response && error.response.data.message)
-      throw new Error(error.response.data.message);
-    throw new Error(error.message);
-  }
-};
-
-export const getSinglePost = async ({ slug }) => {
-  try {
-    const { data } = await axios.get(`${apiUrl}/api/posts/${slug}`);
-    return data;
-  } catch (error) {
-    if (error.response && error.response.data.message)
-      throw new Error(error.response.data.message);
-    throw new Error(error.message);
-  }
-};
-
-export const deletePost = async ({ slug, token }) => {
-  try {
-    const config = {
-      headers: {
-        Authorization: `Bearer ${token}`,
-      },
-    };
-
-    const { data } = await axios.delete(`${apiUrl}/api/posts/${slug}`, config);
-    return data;
-  } catch (error) {
-    if (error.response && error.response.data.message)
-      throw new Error(error.response.data.message);
-    throw new Error(error.message);
-  }
-};
-
-export const updatePost = async ({ updatedData, slug, token }) => {
-  try {
-    const config = {
-      headers: {
-        Authorization: `Bearer ${token}`,
-      },
-    };
-
-    const { data } = await axios.put(`${apiUrl}/api/posts/${slug}`, updatedData, config);
-    return data;
-  } catch (error) {
-    if (error.response && error.response.data.message)
-      throw new Error(error.response.data.message);
-    throw new Error(error.message);
-  }
-};
-
-export const createPost = async ({ token }) => {
-  try {
-    const config = {
-      headers: {
-        Authorization: `Bearer ${token}`,
-      },
-    };
-
-    const { data } = await axios.post(`${apiUrl}/api/posts`, {}, config);
-    return data;
   } catch (error) {
     if (error.response && error.response.data.message)
       throw new Error(error.response.data.message);

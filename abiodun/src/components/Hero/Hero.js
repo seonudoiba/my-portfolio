@@ -1,7 +1,7 @@
 import React, {useState} from "react";
-import "./Home.css";
+import "./Hero.css";
 
-function Home() {
+function Hero() {
   return (
     <div className="home" id="Home">
       <div className="home__bg">   
@@ -21,4 +21,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Hero;

@@ -2,7 +2,7 @@ import React from "react";
 import { BsCheckLg } from "react-icons/bs";
 import { AiOutlineClose } from "react-icons/ai";
 
-import { images, stables } from "../constants";
+import { images, stables } from "../../constants";
 import { Link } from "react-router-dom";
 
 const ArticleCard = ({ post, className }) => {

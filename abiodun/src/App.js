@@ -1,12 +1,11 @@
 import {Routes, Route } from "react-router-dom";
 import "./App.css";
 
-import HomePage from './pages/homePage';
+import Header from "./components/Header";
 import Footer from './components/Footer';
+import HomePage from "./pages/homePage";
 import Articles from './pages/article/Article.jsx'
-import Header from './components/Header'
 import Login from "./pages/login/LoginPage";
-import { Toaster } from "react-hot-toast";
 import ArticleDetailPage from "./pages/articleDetail/ArticleDetailPage";
 import RegisterPage from "./pages/register/RegisterPage";
 import ProfilePage from "./pages/profile/ProfilePage";
@@ -15,6 +14,7 @@ import Admin from "./pages/admin/screens/Admin";
 import Comments from "./pages/admin/screens/comments/Comments";
 import ManagePosts from "./pages/admin/screens/posts/ManagePosts";
 import EditPost from "./pages/admin/screens/posts/EditPost";
+import { Toaster } from "react-hot-toast";
 
 
 
