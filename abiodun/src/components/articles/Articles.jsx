@@ -19,7 +19,7 @@ const Articles = () => {
   });
 
   return (
-    <section className="flex bg-black flex-col container mx-auto px-5 py-10">
+    <section className="flex text-black flex-col container mx-auto px-5 py-10">
       <h2 className="text-4xl text-center font-bold text-yellow-700 mb-5">
         Articles
       </h2>
