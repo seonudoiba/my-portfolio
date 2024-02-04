@@ -3,10 +3,10 @@ import "./Service.css";
 
 function Service() {
   return (
-    <div className="service component__space" id="Services">
+    <div className="service component__space" id="Services sweet">
 
       <div className="heading">
-        <h1 className="heading">My Awesome Services</h1>
+        <h1 className="heading text-white">My Awesome Services</h1>
         <p className="heading p__color">
         Unlock the full potential of your online presence with My Awesome Service. As a seasoned developer, 
         </p>

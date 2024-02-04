@@ -16,7 +16,7 @@ function About() {
         <div className="row">
           
           <div className="col__2">
-            <h1 className="about__heading">About Me</h1>
+            <h1 className="about__heading text-white">About Me</h1>
             <div className="about__meta">
               <p className="about__text p__color">
               Are you searching for a dynamic Junior Fullstack Developer to improve your team's capabilities? 

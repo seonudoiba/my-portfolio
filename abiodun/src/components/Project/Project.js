@@ -44,7 +44,7 @@ function Project() {
   return (
     <div className="project component__space" id="Portfolio">
       <div className="heading">
-        <h1 className="heading">My Latest Projects</h1>
+        <h1 className="heading text-white">My Latest Projects</h1>
         <p className="heading p__color">
           Here are some of the exiting projects I have worked on recently.
         </p>
