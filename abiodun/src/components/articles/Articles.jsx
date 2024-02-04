@@ -19,8 +19,8 @@ const Articles = () => {
   });
 
   return (
-    <section className="flex bg-yellow-700 flex-col container mx-auto px-5 py-10">
-      <h2 className="text-4xl text-center font-bold text-white mb-5">
+    <section className="flex  flex-col container mx-auto px-5 py-10">
+      <h2 className="text-4xl text-center font-bold text-black mb-5">
         Articles
       </h2>
       <div className=" flex flex-wrap md:gap-x-5 gap-y-5 pb-10">
