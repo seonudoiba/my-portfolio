@@ -26,7 +26,6 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/articles" element={<Articles />} />
         <Route path="/login" element={<Login />} />
-        {/* <Route index path="/" element={<HomePage />} /> */}
         <Route path="/blog/:slug" element={<ArticleDetailPage />} />
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/profile" element={<ProfilePage />} />
