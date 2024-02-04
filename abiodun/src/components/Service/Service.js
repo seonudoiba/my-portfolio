@@ -6,11 +6,11 @@ function Service() {
     <div className="service component__space" id="Services">
       <div className="heading">
         <h1 className="heading text-black">My Awesome Services</h1>
-        <p className="heading tect-yellow-800">
+        <p className="heading text-black text-center">
           Unlock the full potential of your online presence with My Awesome
           Service. As a seasoned developer,
         </p>
-        <p className="heading tect-yellow-800">
+        <p className="heading text-black text-center">
           I bring creativity and technical expertise to deliver tailored
           solutions that elevate your digital footprint and captivate your
           audience.
